@@ -1,0 +1,41 @@
+.categories_section   {  width: 25%;  height: 70vh; border: 1px solid var(--line-gray);  border-radius: 10px;
+    margin-top: 15px;  overflow-x: scroll;  z-index: 999;}
+.categories_section::-webkit-scrollbar   { width: 4px; height: 10px;}
+.categories_section::-webkit-scrollbar-thumb   { background: #4e4e4e;}
+.category   { width: 100%; height: 65px; display: flex; align-items: center;  justify-content: center;}
+.category_link   { display: block; text-decoration: none; color: var(--color-dark); width: 100%; text-align: center;
+padding: 20px 0;}
+.category_link:hover .sub_menu  {display: block;}
+.categories_section:hover   {border: none;}
+
+/* sub menu */
+.sub_menu   {position: absolute; width: 25%; height: 100vh;  margin-top: 15px;  padding-top: 60px; left: 22%;
+top: 0;  display: none; background-color: white;}
+.subMenu_List  { list-style: none; text-align: center;  width: 100%;}
+
+.subMenu_Link   { display: block;  text-decoration: none; color: var(--color-dark); width: 100%;  text-align: center;
+padding: 20px 0;  margin: 5px 0;}
+.subMenu_Link:hover  {box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; width: 70%; margin: 0 auto;}
+
+/* sub menu images section */
+.sub_menu_images_container::-webkit-scrollbar   { width: 4px;  height: 10px;}
+.sub_menu_images_container::-webkit-scrollbar-thumb   {background: #4e4e4e;}
+.sub_menu_images_container   {position: absolute; content: ''; width: 330px;  height: 100vh;  background-color: #fff;
+          right: -300px;  top: 0; display: none; overflow-x: scroll; flex-wrap: wrap;}
+.subMenu_Link:hover .sub_menu_images_container   {display: block;}
+.sub_menu_img_box   {width: 110px; height: 110px; margin: 20px;}
+.sub_menu_img_box:hover  {box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
+.sub_menu_img_box > img  { width: 100%;  object-fit: contain;}
+.img_container   { display: flex;  flex-wrap: wrap;}
+.img_name  { font-size: 16px;  display: inline-block;  color: var(--color-dark);}
+
+
+
+
+
+/* *********************  Responsive  *************** */
+
+@media screen and (max-width: 767px) {
+   .categories_section  {width: 100%;}
+ /* ........./  */
+}

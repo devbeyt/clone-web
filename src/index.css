@@ -1,0 +1,15 @@
+*  {margin: 0; padding: 0; box-sizing: border-box;}
+
+/* global styles...... */
+:root  {
+    --bg-dark: #171717;
+    --bg-light: #fff;
+    --border-color: #d8d8d8;
+    --logo-color-1: deeppink;
+    --text-light: #d8d8d8;
+}
+
+.home_main_section {display: flex;}
+
+.container  {width: calc(100% - 78px); margin: 0 auto;}
+.page  {min-height: 100vh; height: 100vh;}
